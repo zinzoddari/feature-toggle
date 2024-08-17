@@ -38,4 +38,17 @@ class BusinessServiceTest {
         //then
         assertThat(result).isFalse();
     }
+
+    @Test
+    @DisplayName("존재하지 않는 토글의 경우 비활성화 처리를 합니다.")
+    void invalidToggle() {
+        //given
+        final String toggleId = "INVALID-TOGGLE-ID";
+
+        //when
+        final boolean result = businessService.login(toggleId);
+
+        //then
+        assertThat(result).isFalse();
+    }
 }
