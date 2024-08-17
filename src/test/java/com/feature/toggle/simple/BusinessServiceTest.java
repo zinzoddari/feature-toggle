@@ -14,7 +14,7 @@ class BusinessServiceTest {
     private BusinessService businessService;
 
     @Test
-    @DisplayName("활성화 된 토글을 불러옵니다.")
+    @DisplayName("사용여부가 Y인 토글을 불러옵니다.")
     void activeToggle() {
         //given
         final String toggleId = "SIMPLE-TOGGLE-ONE";
@@ -27,7 +27,7 @@ class BusinessServiceTest {
     }
 
     @Test
-    @DisplayName("비활성화 된 토글을 불러옵니다.")
+    @DisplayName("사용여부가 N인 토글을 불러옵니다.")
     void nonActiveToggle() {
         //given
         final String toggleId = "SIMPLE-TOGGLE-TWO";

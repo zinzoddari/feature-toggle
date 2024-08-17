@@ -27,10 +27,6 @@ public class SimpleToggle {
     @Column(name = "TOGGLE_ID", length = 32)
     private String toggleId;
 
-    @Comment("토글 이름")
-    @Column(name = "TOGGLE_NAME", length = 32)
-    private String name;
-
     @Comment("설명")
     @Column(name = "DESCRIPTION", length = 128)
     private String description;
