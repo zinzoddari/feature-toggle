@@ -24,7 +24,7 @@ class SimpleDateBusinessServiceTest {
         void isY() {
             //given
             final String toggleId = "TOGGLE-ONE";
-            final LocalDateTime currentDate = LocalDateTime.now();
+            final LocalDateTime currentDate = LocalDateTime.of(2024, 8, 18, 1, 20, 0);
 
             //when
             final boolean result = simpleDateBusinessService.logic(toggleId, currentDate);
@@ -38,7 +38,7 @@ class SimpleDateBusinessServiceTest {
         void isN() {
             //given
             final String toggleId = "TOGGLE-TWO";
-            final LocalDateTime currentDate = LocalDateTime.now();
+            final LocalDateTime currentDate = LocalDateTime.of(2024, 8, 18, 1, 20, 0);
 
             //when
             final boolean result = simpleDateBusinessService.logic(toggleId, currentDate);
@@ -56,7 +56,7 @@ class SimpleDateBusinessServiceTest {
         void isY() {
             //given
             final String toggleId = "TOGGLE-THREE";
-            final LocalDateTime currentDate = LocalDateTime.now();
+            final LocalDateTime currentDate = LocalDateTime.of(2024, 8, 18, 1, 20, 0);
 
             //when
             final boolean result = simpleDateBusinessService.logic(toggleId, currentDate);
@@ -70,7 +70,7 @@ class SimpleDateBusinessServiceTest {
         void isN() {
             //given
             final String toggleId = "TOGGLE-FOUR";
-            final LocalDateTime currentDate = LocalDateTime.now();
+            final LocalDateTime currentDate = LocalDateTime.of(2024, 8, 18, 1, 20, 0);
 
             //when
             final boolean result = simpleDateBusinessService.logic(toggleId, currentDate);
