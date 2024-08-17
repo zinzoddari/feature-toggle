@@ -18,6 +18,3 @@ spring:
     sql:
       init:
         mode: always
-
-simple:
-  toggle-id: SIMPLE-TOGGLE-ONE
