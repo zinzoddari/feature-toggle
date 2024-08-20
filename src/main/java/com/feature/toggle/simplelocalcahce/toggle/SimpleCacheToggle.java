@@ -17,9 +17,7 @@ import org.hibernate.annotations.Comment;
 
 @Getter
 @Entity
-@Builder
 @Table(name = "SIMPLE_CACHE_TOGGLE_INFO")
-@AllArgsConstructor
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class SimpleCacheToggle {
     @Id
@@ -39,6 +37,14 @@ public class SimpleCacheToggle {
     @Column(name = "USE_YN")
     @Convert(converter = BooleanYnConverter.class)
     private boolean useYn;
+
+    @Builder
+    protected SimpleCacheToggle(Long id, String toggleId, String description, boolean useYn) {
+        this.id = id;
+        this.toggleId = toggleId;
+        this.description = description;
+        this.useYn = useYn;
+    }
 
     public void changeUseYn() {
         if (useYn) {

@@ -15,7 +15,7 @@ class SimpleCacheToggleTest {
         void changeFalse() {
             //given
             final boolean request = true;
-            final SimpleCacheToggle toggle = simpleCacheToggle을_생성합니다(request);
+            final SimpleCacheToggle toggle = SimpleCacheToggleTestFixture.flag를받아_객체를_생성합니다(request);
 
             //when
             toggle.changeUseYn();
@@ -29,7 +29,7 @@ class SimpleCacheToggleTest {
         void changeTrue() {
             //given
             final boolean request = false;
-            final SimpleCacheToggle toggle = simpleCacheToggle을_생성합니다(request);
+            final SimpleCacheToggle toggle = SimpleCacheToggleTestFixture.flag를받아_객체를_생성합니다(request);
 
             //when
             toggle.changeUseYn();
@@ -37,12 +37,5 @@ class SimpleCacheToggleTest {
             //then
             assertThat(toggle.isUseYn()).isTrue();
         }
-    }
-
-    private SimpleCacheToggle simpleCacheToggle을_생성합니다(boolean flag) {
-        return SimpleCacheToggle.builder()
-                .id(1L)
-                .useYn(flag)
-                .build();
     }
 }
