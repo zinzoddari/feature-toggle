@@ -14,3 +14,7 @@ values ('SIMPLE-CACHE-TOGGLE', '심플 토글입니다.', 'Y');
 insert into MAP_CACHE_TOGGLE_INFO (TOGGLE_ID, DESCRIPTION, USE_YN)
 values ('MAP-TOGGLE-ONE', '사용중인 심플 토글입니다.', 'Y'),
        ('MAP-TOGGLE-TWO', '비사용중인 심플 토글입니다.', 'N');
+
+insert into PUBSUB_TOGGLE_INFO (TOGGLE_ID, DESCRIPTION, USE_YN)
+values ('PUBSUB-TOGGLE-ONE', '사용중인 심플 토글입니다.', 'Y'),
+       ('PUBSUB-TOGGLE-TWO', '비사용중인 심플 토글입니다.', 'N');

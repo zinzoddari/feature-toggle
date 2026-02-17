@@ -3,13 +3,9 @@ spring:
     url: jdbc:h2:tcp://localhost:1521/~/shared-h2;MODE=MySQL
     username: sa
     password:
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
     defer-datasource-initialization: true
     show-sql: true
     properties:
@@ -17,10 +13,3 @@ spring:
         format_sql: true
         show_sql: true
         dialect: org.hibernate.dialect.MySQL8Dialect
-  sql:
-    init:
-      mode: never
-  data:
-    redis:
-      host: localhost
-      port: 6379
