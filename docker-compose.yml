@@ -1,0 +1,16 @@
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+  h2:
+    image: oscarfonts/h2
+    platform: linux/amd64
+    ports:
+      - "1521:1521"
+    command:
+      - "sh"
+      - "-c"
+      - "java -cp /opt/h2/bin/h2*.jar org.h2.tools.Server -tcp -tcpAllowOthers -tcpPort 1521 -ifNotExists"
+    restart: unless-stopped

@@ -34,6 +34,8 @@ dependencies {
 	// h2
 	runtimeOnly("com.h2database:h2")
 	runtimeOnly("org.mariadb.jdbc:mariadb-java-client:3.3.3")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation("org.springframework.boot:spring-boot-starter-cache")
 }
 
 tasks.withType<Test> {
